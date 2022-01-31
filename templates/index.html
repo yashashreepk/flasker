@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>blog</title>
+</head>
+<h1>Hello world</h1>
+<body>
+<p> This is my First Web Page</p>
+<p>Its Cool</p>
+<p> My name is {{first_name |capitalize }}</p>
+<p>{{stuff|safe}}</p>
+<p>{{stuff|striptags}}</p>
+<p>{{stuff1|title}}</p>
+<h3>>
+    <p>Faivorate pizza:</p>
+{% for topping in fav_pizza %}
+    {% if topping ==41 %}
+        {{topping +100 }}
+    {% else %}
+        {{topping}}<br/>
+    {% endif%}
+    {% endfor%}
+    <br/><br/>
+    {{fav_pizza|reverse}}
+</h3>
+</body>
+</html>
